@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/testseries"
+        android:icon="@drawable/test"
+        android:title="Test Series" />
+    <item
+        android:id="@+id/currentaffairs"
+        android:icon="@drawable/current_affairs"
+        android:title="Current_Affairs" />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/quiz"
+        android:title="Quizes" />
+    <item
+        android:id="@+id/pyq"
+        android:icon="@drawable/pyqp"
+        android:title="P Y Q" />
+</menu>

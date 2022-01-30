@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370768979824",
+    "project_id": "examportals-ac320",
+    "storage_bucket": "examportals-ac320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370768979824:android:ec822c99300b48c58e11b5",
+        "android_client_info": {
+          "package_name": "com.jrcreations.myexamportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370768979824-7698frtunqav9v3som81ia7s63b7rud2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_F7yg_RFy0Hh7QpFihZO94ilrwGNcP_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370768979824-7698frtunqav9v3som81ia7s63b7rud2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

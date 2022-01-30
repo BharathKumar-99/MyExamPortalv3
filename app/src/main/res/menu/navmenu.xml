@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Settings" />
+    <item android:title="ContactUs" />
+    <item android:title="Rate Our App" />
+    <item android:title="Logout" />
+</menu>
