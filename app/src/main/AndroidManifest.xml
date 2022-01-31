@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
         <activity
-            android:name=".Home.HomeScreen"
+            android:name=".Home.SelectedItemNext.SeletedListUi"
             android:exported="false" />
         <activity
-            android:name=".LoginSignup.MainActivity"
+            android:name=".Home.Profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +24,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Home.Result.Result"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Quiz.Quiz"
+            android:exported="false" />
+        <activity
+            android:name=".Home.SelectedItem.SelectedItem"
+            android:exported="false" />
+        <activity
+            android:name=".Home.HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSignup.MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

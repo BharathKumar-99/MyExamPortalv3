@@ -1,18 +1,14 @@
-package com.jrcreations.myexamportal.Home.Items;
+package com.jrcreations.myexamportal.Home.SelectedItem;
 
-import android.app.ProgressDialog;
-import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.jrcreations.myexamportal.Home.RecycleView.RecycleMock;
+import com.jrcreations.myexamportal.Home.RecycleView.SelectedRecycleView;
 import com.jrcreations.myexamportal.Model.MockTestModel;
 import com.jrcreations.myexamportal.R;
 
@@ -32,55 +29,51 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-public class TestSeries extends Fragment {
-
-    TextView name;
-    private List<MockTestModel> mockTestModels;
-    RecyclerView recyclerView;
-    String value;
+public class SelectedItem extends AppCompatActivity {
+String value;
+Toolbar toolbar;
     private ProgressDialog pDialog;
-    RecycleMock adapter;
-
-    public TestSeries() {
-        // Required empty public constructor
-    }
-
-    public static TestSeries newInstance(String param1, String param2) {
-        TestSeries fragment = new TestSeries();
-
-        return fragment;
-    }
-
+    private List<MockTestModel> mockTestModels;
+    SelectedRecycleView adapter;
+RecyclerView recyclerView;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_selected_item);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            value = extras.getString("slelectedui");
+            //The key argument here must match that used in the other activity
+        }
+        recyclerView=findViewById(R.id.selecteduiview);
+        toolbar=findViewById(R.id.toolbarsi);
+        toolbar.setTitle(value);
+        toolbar.setNavigationIcon(R.drawable.baseline_arrow_back_white_24dp);
 
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View view= inflater.inflate(R.layout.fragment_test_series, container, false);
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               onBackPressed();
+            }
+        });
         mockTestModels=new ArrayList<>();
-
-        recyclerView=view.findViewById(R.id.mrec);
-
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter=new RecycleMock(getContext(),mockTestModels);
-        recyclerView.setAdapter(adapter);
-        pDialog = new ProgressDialog(getContext());
+        pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading");
         pDialog.show();
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter=new SelectedRecycleView(this,mockTestModels);
+        recyclerView.setAdapter(adapter);
         getname();
-         return view;
 
     }
-
+    private void hidePDialog() {
+        if (pDialog != null) {
+            pDialog.dismiss();
+            pDialog = null;
+        }
+    }
     public void getname() {
 
 
@@ -133,15 +126,9 @@ public class TestSeries extends Fragment {
         };
 
         //creating a request queue
-        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
 
         //adding the string request to request queue
         requestQueue.add(stringRequest);
-    }
-    private void hidePDialog() {
-        if (pDialog != null) {
-            pDialog.dismiss();
-            pDialog = null;
-        }
     }
 }

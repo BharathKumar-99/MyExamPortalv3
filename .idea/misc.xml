@@ -4,20 +4,35 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable-v24/tabbackground.xml" value="0.132" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/buttonrad.xml" value="0.132" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/homescreen.xml" value="0.132" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/itemselector.xml" value="0.132" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/menu.xml" value="0.132" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/profilebackground.xml" value="0.132" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/roundedcorner.xml" value="0.132" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/selecterbutton.xml" value="0.132" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/drawable/test.xml" value="0.132" />
-        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_home_screen.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_quiz.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_result.xml" value="0.13" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_selected_item.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_seleted_list_ui.xml" value="0.21" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/activity_splash_screen.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_current_affairs.xml" value="0.18" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_login.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_p_y_q.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_quizes.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_signup.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/fragment_test_series.xml" value="0.1111111111111111" />
-        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/header.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/header.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/nav_drawer.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/nav_options.xml" value="0.1111111111111111" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/quizbutton.xml" value="0.1111111111111111" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/selectedui.xml" value="0.13" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/selectedui_block.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/layout/uibutton.xml" value="0.16" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/new/MyExamPortal3/app/src/main/res/menu/navmenu.xml" value="0.1111111111111111" />
       </map>
